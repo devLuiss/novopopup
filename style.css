@@ -19,7 +19,7 @@ body {
   position: fixed;
   align-self: center;
   width: 40.87rem !important;
-  height: 35.75rem !important;
+  height: 34.75rem !important;
   background-color: #f0ebe5;
   z-index: 999;
   display: none;
@@ -56,8 +56,7 @@ body {
 
   object-fit: cover;
   margin-left: 1rem;
-  margin-right: .5rem;
-
+  margin-right: 0.5rem;
 }
 
 .nomeEmpresa {
@@ -151,6 +150,7 @@ body {
   border-radius: 10px;
   align-items: center;
   padding-left: 1rem;
+  border: 1px solid #c5f1c9;
 }
 
 .inputspopup input::placeholder {
@@ -159,6 +159,10 @@ body {
   font-size: 1rem;
   color: #8b8b8b;
   align-items: center;
+}
+
+.inputspopup input:focus {
+  border: 1px solid #00352e;
 }
 
 #inputMensagem {
@@ -190,10 +194,6 @@ body {
   display: flex;
   align-items: center;
   padding-left: 1rem;
-}
-
-.inputCheck:checked {
-  background-color: #c5f1c9;
 }
 
 #enviar {
@@ -278,5 +278,6 @@ body {
   #enviar {
     width: 100%;
     margin-left: 0rem;
+    
   }
 }
