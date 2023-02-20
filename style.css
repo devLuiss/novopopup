@@ -75,6 +75,7 @@ body {
   color: #fff;
   width: 100%;
   text-align: left; 
+  white-space: nowrap;
 }
 
 .online {
@@ -85,20 +86,20 @@ body {
 }
 
 .closepopup {
-  font-family: "Roboto", sans-serif;
-  font-weight: lighter;
-  font-size: 0.875rem;
-  color: #fff;
-  margin-left: 13rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  
 }
 
 .closepopup img {
-  width: 2rem;
-  height: 2rem;
-  margin-right: 1.31rem;
   background-color: #fafafa;
-  
   cursor: pointer;
+  width: 1.9rem;
+  height: 1.9rem;
 }
 
 .bodypopup {
@@ -242,11 +243,12 @@ body {
     margin-left: 0rem;
   }
   .closepopup {
-    margin-left: 0rem;
+    margin-right: 2.5rem;
+
   }
   .closepopup img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
     margin-right: 1.31rem;
     background-color: #fafafa;
     margin-left: 5.25rem;
