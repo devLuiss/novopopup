@@ -1,6 +1,5 @@
 function showpop() {
   document.getElementsByClassName("popupContainer")[0].style.display = "block";
-  document.getElementsByClassName("blurTest")[0].style.display = "";
 }
 
 function hidepopup() {
@@ -30,7 +29,7 @@ function addWPdiv(
         <div class="online">Online</div>
       </div>
       <div class="closepopup" onclick="hidepopup()">
-        <img src="https://img.icons8.com/ios/50/000000/circled-x.png" />
+        <img id="closeupopup"src="https://img.icons8.com/ios/50/000000/circled-x.png" />
       </div>
     </div>
     <div class="bodypopup">
@@ -57,10 +56,7 @@ function addWPdiv(
 
 
   </div>
-
-
-
-    `;
+ `;
 
   var popup = document.createElement("div");
   popup.innerHTML = htmlContent;
@@ -82,10 +78,10 @@ function addWPdiv(
 }
 
 addWPdiv(
-  "btn",
-  "https://httpbin.org/post",
-  "66999999999",
-  "Olá, gostaria de conversar sobre o produto X",
-  "http://s3.amazonaws.com/storage.wobiz.com/97/97694/images/Medium32/social-default_1661173116.png",
-  "Nome da empresa"
+  "btn", // Classe do botão//
+  "https://httpbin.org/post", // URL do post//
+  "5566992355663", // Número do whatsapp//
+  "Olá, gostaria de saber mais sobre", // Mensagem padrão que sera mandada no whatsapp//
+  "https://i.ytimg.com/vi/D2ZYUPvogLQ/maxresdefault.jpg", // URL da imagem que sera a foto do perfil do whatsapp//
+  "Nome da empresa" // Nome da empresa//
 );
