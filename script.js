@@ -77,8 +77,6 @@ function addWPdiv(
   popup.innerHTML = htmlContent;
   document.body.appendChild(popup);
 
-  // Quando encontra o campo, executa a ação de deixar os respectivos campos invisíveis
-
   // TESTE /?utm_content=utm_content&utm_term=utm_term&utm_medium=utm_medium&utm_campaign=utm_campaign&utm_source=utm_source
 
   document
