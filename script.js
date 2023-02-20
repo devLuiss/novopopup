@@ -7,7 +7,14 @@ function hidepopup() {
   document.getElementsByClassName("popupContainer")[0].style.display = "none";
 }
 
-function addWPdiv(class_name, post_url, phone_number, wp_message) {
+function addWPdiv(
+  class_name,
+  post_url,
+  phone_number,
+  wp_message,
+  url_img,
+  nome_empresa
+) {
   const btns = document.querySelectorAll(`.${class_name}`).forEach((btn) => {
     btn.setAttribute("onclick", "showpop()");
   });
@@ -15,11 +22,11 @@ function addWPdiv(class_name, post_url, phone_number, wp_message) {
     <div class="popupContainer">
     <div class="headerpopup">
       <img
-        src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?w=1380&t=st=1676721783~exp=1676722383~hmac=a807ffc8d15c714022d602026911bc7845c358f5fbb5beed3f56c114bda75dd4"
+        src="${url_img}"
         alt="4all"
       />
       <div class="nomeEmpresa">
-        <strong>Nome da Empresa</strong>
+        <strong> ${nome_empresa}</strong>
         <div class="online">Online</div>
       </div>
       <div class="closepopup" onclick="hidepopup()">
@@ -78,5 +85,7 @@ addWPdiv(
   "btn",
   "https://httpbin.org/post",
   "66999999999",
-  "Olá, gostaria de conversar sobre o produto X"
+  "Olá, gostaria de conversar sobre o produto X",
+  "http://s3.amazonaws.com/storage.wobiz.com/97/97694/images/Medium32/social-default_1661173116.png",
+  "Minha cirurgia "
 );
