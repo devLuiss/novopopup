@@ -211,7 +211,14 @@ body {
     width: 2.93rem;
     height: 2.93rem;
     border-radius: 50%;
-    margin-right: rem;
+    margin-left: 1rem;
+  }
+  .nomeEmpresa {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    color: #fff;
+    margin-right: 4rem;
   }
   .bodypopup {
     width: 100%;
@@ -240,6 +247,7 @@ body {
   }
   .inputCheck {
     width: 100%;
+    margin-left: 0rem;
   }
   #enviar {
     width: 100%;
