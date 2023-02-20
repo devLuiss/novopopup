@@ -255,6 +255,7 @@ body {
 
   .mensagem {
     margin-left: 0rem;
+    width: 90%;
   }
   .inputspopup {
     margin-left: 0rem;
@@ -266,7 +267,7 @@ body {
     width: 100%;
   }
   .inputCheck {
-    width: 100%;
+    width: 90%;
     margin-left: 0rem;
   }
   #enviar {
