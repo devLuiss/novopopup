@@ -38,7 +38,7 @@ body {
   display: flex;
   width: 40.87rem;
   height: 4.68rem;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
 
   color: white;
@@ -61,7 +61,20 @@ body {
   font-weight: bold;
   font-size: 1.125rem;
   color: #fff;
-  margin-left: -15.25rem;
+  width: 100%;
+  margin-bottom: 0.625rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nomeEmpresa strong {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: #fff;
+  width: 100%;
+  text-align: left; 
 }
 
 .online {
@@ -76,6 +89,7 @@ body {
   font-weight: lighter;
   font-size: 0.875rem;
   color: #fff;
+  margin-left: 13rem;
 }
 
 .closepopup img {
@@ -83,7 +97,7 @@ body {
   height: 2rem;
   margin-right: 1.31rem;
   background-color: #fafafa;
-  margin-left: 5.25rem;
+  
   cursor: pointer;
 }
 
@@ -238,7 +252,7 @@ body {
     margin-left: 5.25rem;
     cursor: pointer;
   }
-  
+
   .mensagem {
     margin-left: 0rem;
   }
