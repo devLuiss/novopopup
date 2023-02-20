@@ -87,5 +87,5 @@ addWPdiv(
   "66999999999",
   "Olá, gostaria de conversar sobre o produto X",
   "http://s3.amazonaws.com/storage.wobiz.com/97/97694/images/Medium32/social-default_1661173116.png",
-  "Minha cirurgia "
+  "Nome da empresa"
 );
