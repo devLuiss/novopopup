@@ -7,11 +7,6 @@ body {
   flex-direction: column;
   -webkit-font-smoothing: antialiased;
 }
-.backdrop-blur {
-  backdrop-filter: blur(10px);
-  width: 100%;
-  height: 100%;
-}
 
 .popupContainer {
   z-index: 999;
@@ -278,6 +273,5 @@ body {
   #enviar {
     width: 100%;
     margin-left: 0rem;
-    
   }
 }
