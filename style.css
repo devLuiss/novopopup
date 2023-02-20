@@ -218,7 +218,7 @@ body {
     font-weight: bold;
     font-size: 1.125rem;
     color: #fff;
-    margin-right: 4.5rem;
+    margin-right: 2.5rem;
   }
   .bodypopup {
     width: 100%;
@@ -231,8 +231,14 @@ body {
     margin-left: 0rem;
   }
   .closepopup img {
-    margin-left: 0rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1.31rem;
+    background-color: #fafafa;
+    margin-left: 5.25rem;
+    cursor: pointer;
   }
+  
   .mensagem {
     margin-left: 0rem;
   }
