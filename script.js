@@ -17,6 +17,14 @@ function addWPdiv(
   const btns = document.querySelectorAll(`.${class_name}`).forEach((btn) => {
     btn.setAttribute("onclick", "showpop()");
   });
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const utm_source = urlParams.get("utm_source");
+  const utm_medium = urlParams.get("utm_medium");
+  const utm_campaign = urlParams.get("utm_campaign");
+  const utm_term = urlParams.get("utm_term");
+  const utm_content = urlParams.get("utm_content");
+
   const htmlContent = `
     <div class="popupContainer">
     <div class="headerpopup">
@@ -44,11 +52,12 @@ function addWPdiv(
             <input required type="tel" name="telefone" placeholder="DDD + Número de telefone"   />
             <input required type="email" name="email" placeholder="E-mail" />
             <input required type="text" name="mensagem" placeholder="Digite aqui sua mensagem...."  id="inputMensagem"/>
-            <input type="hidden" name="utm_source"  />
-            <input type="hidden" name="utm_medium" />
-            <input type="hidden" name="utm_campaign"  />
-            <input type="hidden" name="utm_term"  />
-            <input type="hidden" name="utm_content"  />
+            <input type="hidden" name="utm_source" value="${utm_source}" />
+            <input type="hidden" name="utm_medium" value="${utm_medium}" />
+            <input type="hidden" name="utm_campaign" value="${utm_campaign}" />
+            <input type="hidden" name="utm_term" value="${utm_term}" />
+            <input type="hidden" name="utm_content" value="${utm_content}" />
+            
 
            
         </div>
@@ -69,23 +78,6 @@ function addWPdiv(
   document.body.appendChild(popup);
 
   // Quando encontra o campo, executa a ação de deixar os respectivos campos invisíveis
-  function ocultar() {
-    //Aplica valor aos respectivos campos
-    source.setAttribute("value", utm_source);
-    medium.setAttribute("value", utm_medium);
-    campaign.setAttribute("value", utm_campaign);
-    term.setAttribute("value", utm_term);
-    content.setAttribute("value", utm_content);
-  }
-
-  const urlParams = new URLSearchParams(window.location.search);
-  const utm_source = urlParams.get("utm_source");
-  const utm_medium = urlParams.get("utm_medium");
-  const utm_campaign = urlParams.get("utm_campaign");
-  const utm_term = urlParams.get("utm_term");
-  const utm_content = urlParams.get("utm_content");
-
-  ocultar();
 
   // TESTE /?utm_content=utm_content&utm_term=utm_term&utm_medium=utm_medium&utm_campaign=utm_campaign&utm_source=utm_source
 
